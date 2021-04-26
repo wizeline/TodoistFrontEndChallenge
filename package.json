@@ -4,7 +4,7 @@
   "description": "toDoist project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "testcafe chrome '/Users/ricardo.rodriguezr/Desktop/toDoist-frontend/e2e/test/Login.test.js'"
   },
   "author": "Ricardo Rodriguez",
   "license": "ISC"
