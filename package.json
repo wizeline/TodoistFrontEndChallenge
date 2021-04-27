@@ -4,8 +4,10 @@
   "description": "toDoist project",
   "main": "index.js",
   "scripts": {
+
     "test:chrome": "testcafe chrome ./e2e/test",
     "test:all": "testcafe all ./e2e/test"
+
   },
   "author": "Ricardo Rodriguez",
   "license": "ISC",
