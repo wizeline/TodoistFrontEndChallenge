@@ -5,21 +5,16 @@ import {CREDENTIALS} from '../data/Constants'
 
 fixture('Login feature')
             .page`https://todoist.com`
+            .beforeEach(async t =>{
+              await t.click(WelcomePage.loginBtn)
+            })
 
 test('Successful login', async t =>{
-     await t
-       .click(WelcomePage.loginBtn)
-       .typeText(LoginPage.userNameField, CREDENTIALS.VALID_USER.USERNAME)
-       .typeText(LoginPage.passwordField, CREDENTIALS.VALID_USER.PASSWORD)
-       .click(LoginPage.loginBtn)
+     await LoginPage.submitLogin(CREDENTIALS.VALID_USER.USERNAME,CREDENTIALS.VALID_USER.PASSWORD)
      await t.expect(LandingPage.pageTitle.exists).ok()
 })
 
 test('Unsuccessful login', async t =>{
-    await t
-        .click(WelcomePage.loginBtn)
-        .typeText(LoginPage.userNameField, CREDENTIALS.INVALID_USER.USERNAME)
-        .typeText(LoginPage.passwordField, CREDENTIALS.INVALID_USER.PASSWORD)
-        .click(LoginPage.loginBtn)
+    await LoginPage.submitLogin(CREDENTIALS.INVALID_USER.USERNAME, CREDENTIALS.INVALID_USER.PASSWORD)
     await t.expect(LoginPage.errorMessage.exists).ok()   
 })
