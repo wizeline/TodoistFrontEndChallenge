@@ -1,4 +1,4 @@
-import {Selector} from "testcafe"
+import {Selector,t} from "testcafe"
 
 class LandingPage{
     constructor(){
@@ -12,7 +12,33 @@ class LandingPage{
         this.deleteTaskBtn = Selector('li.menu_item.icon_menu_item.danger_menu')
         this.deleteConfirmationBtn = Selector('.ist_button.ist_button_red')
     }
+    
+    async addTasks(numberOfTask){
+        await t
+          .click(this.addTaskPlusBtn)
+          let j = 0
+          let k = 1
 
+          for(var i = 0; i <=numberOfTask; i++){
+              await t.typeText(this.taskTextField, "test"+k)
+              k++
+              await t.click(this.addTaskBtn)
+              j++
+              if(j=== numberOfTask){
+                await t.click(this.cancelBtn)
+                break
+              }
+          }
+    }
+
+    async getNumberOfTaskAdded(){
+            let totalTask = this.getAllTask.count
+
+            array.forEach(element => {
+                
+            });
+
+    }
 }
 
 export default new LandingPage()
