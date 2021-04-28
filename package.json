@@ -1,0 +1,15 @@
+{
+  "name": "todoist_challenge",
+  "version": "1.0.0",
+  "description": "toDoist project",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome ./e2e/test",
+    "test:all": "testcafe all ./e2e/test"
+  },
+  "author": "Ricardo Rodriguez",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
