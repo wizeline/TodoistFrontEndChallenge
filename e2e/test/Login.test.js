@@ -1,7 +1,7 @@
 import WelcomePage from '../pages/welcomePage'
 import LoginPage from '../pages/loginPage'
-import LandingPage from '../pages/landingPage'
-import {CREDENTIALS} from '../data/Constants'
+import LandingPage from '../pages/taskPage'
+import {CREDENTIALS} from '../data/users'
 
 fixture('Login feature')
             .page`https://todoist.com`
@@ -18,3 +18,5 @@ test('Unsuccessful login', async t =>{
     await LoginPage.submitLogin(CREDENTIALS.INVALID_USER.USERNAME, CREDENTIALS.INVALID_USER.PASSWORD)
     await t.expect(LoginPage.errorMessage.exists).ok()   
 })
+
+// agregar mas teste negativos

@@ -4,7 +4,7 @@
   <br>
  
   <br>
-  ToDoist Challenge - FrontEnd/BackEnd
+  toDoist Challenge - FrontEnd/BackEnd
   <br>
 </h1>
 
