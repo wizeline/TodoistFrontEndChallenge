@@ -2,7 +2,7 @@ import {Selector} from 'testcafe'
 
 class WelcomePage{
     constructor(){
-        this.loginBtn = Selector('._3XsmI>li:first-of-type')
+    this.loginBtn = Selector('._3XsmI a[href$="/showlogin"]')
     }
 }
 
