@@ -17,6 +17,8 @@ export const NUMBEROFTASKTOADD ={
         TASKNUMBER: 1
     },
     TEN_TASKS:{
-        TASKNUMBER: 10
+        TASKUNMBER: 10
     }
 }
+
+export const TASKM=NAME

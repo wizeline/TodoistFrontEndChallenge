@@ -1,7 +1,11 @@
 import WelcomePage from '../pages/welcomePage'
 import LoginPage from '../pages/loginPage'
 import LandingPage from '../pages/taskPage'
+<<<<<<< HEAD
 import {CREDENTIALS,NUMBEROFTASKTOADD} from '../data/Constants'
+=======
+import {CREDENTIALS,NUMBEROFTASKTOADD} from '../data/users'
+>>>>>>> upstream/main
 
 fixture('Create Tasks feature')
         .page`https://todoist.com`
