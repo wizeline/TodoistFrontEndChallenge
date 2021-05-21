@@ -1,6 +1,6 @@
 import WelcomePage from '../pages/welcomePage'
 import LoginPage from '../pages/loginPage'
-import LandingPage from '../pages/landingPage'
+import LandingPage from '../pages/taskPage'
 import {CREDENTIALS,NUMBEROFTASKTOADD} from '../data/Constants'
 
 fixture('Create Tasks feature')
@@ -14,6 +14,6 @@ test('Add one task', async t =>{
     await LandingPage.addTasks(NUMBEROFTASKTOADD.ONE_TASK.TASKNUMBER)
 })
 
-test.only('Add 10 tasks', async t =>{
+test('Add 10 tasks', async t =>{
     await LandingPage.addTasks( NUMBEROFTASKTOADD.TEN_TASKS.TASKNUMBER)
 })

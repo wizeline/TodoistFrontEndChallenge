@@ -1,6 +1,6 @@
 import WelcomePage from '../pages/welcomePage'
 import LoginPage from '../pages/loginPage'
-import LandingPage from '../pages/landingPage'
+import LandingPage from '../pages/taskPage'
 import {CREDENTIALS} from '../data/Constants'
 
 fixture('Login feature')

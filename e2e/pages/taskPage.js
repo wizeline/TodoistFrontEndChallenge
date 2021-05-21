@@ -31,12 +31,12 @@ class LandingPage{
           }
     }
 
-    async getNumberOfTaskAdded(){
+    async getTaskName(){
             let totalTask = this.getAllTask.count
 
-            array.forEach(element => {
+            //array.forEach(element => {
                 
-            });
+            
 
     }
 }
