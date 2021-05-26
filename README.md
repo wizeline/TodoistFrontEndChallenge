@@ -41,12 +41,12 @@ $ git clone https://github.com/ricardo-rd-rm/TodoistChallenge.git
 $ cd TodoistChallenge
 
 # Install dependencies
-$ yarn
+$ yarn install
 ```
 ### Before running 
 It needs to be considered that this project uses `env` files to work properly.
 
-### Run Website 
+### Run FrontEnd 
 In order to run website, execute the following commands 
 
 #### Terminal 1

@@ -35,11 +35,6 @@ class taskPage{
           }
     }
 
-    
-    
-
-    
-
 }
 
 export default new taskPage()
