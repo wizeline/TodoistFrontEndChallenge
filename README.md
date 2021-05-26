@@ -47,19 +47,25 @@ $ yarn install
 It needs to be considered that this project uses `env` files to work properly.
 
 ### Run FrontEnd 
-In order to run website, execute the following commands 
+In order to run FrontEnd, execute the following commands 
 
-#### Terminal 1
+#### Scritps to run FE
 ```bash
 # On the shared folder
-$ yarn start
+# test:chrome:headless
+# test:chrome
+# test:all
+$ yarn test:chrome
 ```
 This will run the shared folder watcher to update the website on every shared file change.
 
-#### Terminal 2 
+### Run BackEnd
+In order to run FrontEnd, execute the following commands 
+
+#### Scripts to run BE
 ```bash
 # On the dkidsweb folder
-$ yarn start --reset-cache
+$ yarn 
 ```
 
 
