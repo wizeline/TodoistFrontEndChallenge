@@ -13,7 +13,7 @@ fixture('Create Tasks feature')
         
     })
 
-test.only('Add one task', async t =>{
+test('Add one task', async t =>{
     
     await TaskPage.addTasks(NUMBEROFTASKTOADD.ONE_TASK.TASKNUMBER)
     let numberOfTasks = await TaskPage.getTaskName.count
@@ -23,7 +23,7 @@ test.only('Add one task', async t =>{
 
 })
 
-test.only('Add 10 tasks', async t =>{
+test('Add 10 tasks', async t =>{
     await TaskPage.addTasks(NUMBEROFTASKTOADD.TEN_TASKS.TASKNUMBER)
    
     let numberOfTasks = await TaskPage.getTaskName.count
