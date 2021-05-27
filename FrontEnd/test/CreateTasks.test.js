@@ -25,11 +25,9 @@ test('Add one task', async t =>{
 
 test('Add 10 tasks', async t =>{
     await TaskPage.addTasks(NUMBEROFTASKTOADD.TEN_TASKS.TASKNUMBER)
-   
     let numberOfTasks = await TaskPage.getTaskName.count
     console.log(numberOfTasks)
     for(let i=0; i<= numberOfTasks; i++){
-        
         await t.expect(await TaskPage.getTaskName.innerText).contains('test')
     }
     await t.expect(await TaskPage.getTaskName.count).eql(NUMBEROFTASKTOADD.TEN_TASKS.TASKNUMBER)

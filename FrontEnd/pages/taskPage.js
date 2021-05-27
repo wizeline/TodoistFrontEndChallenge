@@ -19,9 +19,7 @@ class taskPage{
       await t
           .click(this.addTaskPlusBtn)
           // "j" variable used to count number of task added
-          
           let j = 0
-          
           for(let i = 0; i <=numberOfTask; i++){ 
             await t
                    .typeText(this.taskTextField, 'test '+i )
