@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
 
-    "test:chrome:headless": "testcafe chrome:headless ./TodoistChallenge/FrontEnd/test",
+    "test:chrome:headless": "testcafe chrome:headless ./FrontEnd/test",
     "test:chrome": "testcafe chrome ./FrontEnd/test",
-    "test:safari": "testcafe safari ./TodoistChallenge/FronEnd/test",
-    "test:all": "testcafe all ./TodoistChallenge/FrontEnd/test"
+    "test:safari": "testcafe safari ./FronEnd/test",
+    "test:all": "testcafe all ./FrontEnd/test"
 
   },
   "author": "Ricardo Rodriguez",
