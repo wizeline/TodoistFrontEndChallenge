@@ -1,5 +1,5 @@
 import {Selector,t} from "testcafe"
-import faker from 'faker'
+
 
 class taskPage{
     constructor(){
@@ -19,17 +19,16 @@ class taskPage{
       await t
           .click(this.addTaskPlusBtn)
           // "j" variable used to count number of task added
-          // randomTaskDescription 
+          
           let j = 0
-          let randomTaskDescription = faker.lorem.word()
+          
           for(let i = 0; i <=numberOfTask; i++){ 
-            await t.typeText(this.taskTextField, 'test '+i /*+randomTaskDescription*/ )
-            console.log(randomTaskDescription)
-            await t.click(this.addTaskBtn)
+            await t
+                   .typeText(this.taskTextField, 'test '+i )
+                   .click(this.addTaskBtn)
               j++
               if(j=== numberOfTask){
                 await t.click(this.cancelBtn)
-                console.log("test passed1")
                 break
               }
           }
