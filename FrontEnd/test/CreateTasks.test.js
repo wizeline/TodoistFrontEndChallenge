@@ -1,8 +1,11 @@
 import WelcomePage from '../pages/welcomePage'
 import LoginPage from '../pages/loginPage'
 import TaskPage from '../pages/taskPage'
+//import faker from "faker"
 
-import {CREDENTIALS,NUMBEROFTASKTOADD} from '../data/users'
+import {CREDENTIALS} from '../data/users'
+import {NUMBEROFTASKTOADD} from '../data/tasks'
+
 
 
 fixture('Create Tasks feature')
@@ -32,3 +35,14 @@ test('Add 10 tasks', async t =>{
     }
     await t.expect(await TaskPage.getTaskName.count).eql(NUMBEROFTASKTOADD.TEN_TASKS.TASKNUMBER)
 })
+
+/*test.only('Add one task with faker', async t =>{
+    await t.click(TaskPage.addTaskPlusBtn)
+    //let randomTaskName = faker.lorem.word();
+   // console.log(randomTaskName)
+    await t
+    .typeText(randomTaskName)
+    .click(TaskPage.addTaskBtn)
+    .click(TaskPage.cancelBtn)
+
+})*/

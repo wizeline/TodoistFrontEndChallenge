@@ -12,6 +12,7 @@ fixture('Login feature')
 
 test('Valid Credentials', async t =>{
      await LoginPage.submitLogin(CREDENTIALS.VALID_USER.USERNAME,CREDENTIALS.VALID_USER.PASSWORD)
+     await t.wait(5000)
      await t.expect(taskPage.pageTitle.exists).ok()
 })
 
