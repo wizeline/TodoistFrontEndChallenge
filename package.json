@@ -6,8 +6,8 @@
   "scripts": {
 
     "test:chrome:headless": "testcafe chrome:headless ./FrontEnd/test",
-    "test:chrome": "testcafe chrome ./FrontEnd/test",
-    "test:safari": "testcafe safari ./FronEnd/test",
+    "test:chrome": "testcafe chrome ./FrontEnd/test/ -e --reporter list,html:test-reports/testReportChrome.html",
+    "test:safari": "testcafe safari ./FrontEnd/test/",
     "test:all": "testcafe all ./FrontEnd/test"
 
   },
@@ -19,6 +19,6 @@
     "g": "^2.0.1",
     "testcafe": "^1.8.6",
     "testcafe-reporter-html": "^1.4.6",
-    "faker":"5.5.3"
+    "faker":"^5.5.3"
   }
 }

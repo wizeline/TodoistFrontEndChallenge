@@ -1,4 +1,5 @@
 import dotenv from 'dotenv'
+import faker from 'faker'
 dotenv.config()
 
 export const NUMBEROFTASKTOADD ={
@@ -7,6 +8,12 @@ export const NUMBEROFTASKTOADD ={
     },
     TEN_TASKS:{
         TASKNUMBER: 10
+    }
+}
+
+export const FAKEDATA ={
+    FAKE:{
+       FAKEWORD: faker.lorem.word()
     }
 }
 
