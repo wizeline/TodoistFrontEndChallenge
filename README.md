@@ -42,6 +42,12 @@ $ cd TodoistChallenge
 
 # Install dependencies
 $ yarn install
+
+# Add .env file with below Data
+$ USERNAME=ricardo.r.wizeline@gmail.com
+$ PASSWORD=wizeline123
+$ INVALIDUSERNAME=wrongUser@gmail.com
+$ INVALIDPASSWORD=wrongPassword
 ```
 ### Before running 
 It needs to be considered that this project uses `env` files to work properly.
