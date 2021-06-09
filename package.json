@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
 
-    "test:chrome:headless": "testcafe chrome:headless ./FrontEnd/test",
+    "test:chrome:headless": "testcafe chrome:headless ./FrontEnd/test/ -e --reporter list,html:test-reports/testReportChrome.html",
     "test:chrome": "testcafe chrome ./FrontEnd/test/ -e --reporter list,html:test-reports/testReportChrome.html",
-    "test:safari": "testcafe safari ./FrontEnd/test/",
-    "test:all": "testcafe all ./FrontEnd/test"
+    "test:safari": "testcafe safari ./FrontEnd/test/ -e --reporter list,html:test-reports/testReportChrome.html",
+    "test:all": "testcafe all ./FrontEnd/test/ -e --reporter list,html:test-reports/testReportChrome.html"
 
   },
   "author": "Ricardo Rodriguez",
