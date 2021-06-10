@@ -74,25 +74,3 @@ In order to run FrontEnd, execute the following commands
 $ yarn 
 ```
 
-
-
-
-
-
-<details>
-<summary></summary>
-<p>
-  
-
-
-</p>
-</details>
-
-<details>
-<summary></summary>
-<p>
-  
-
-
-</p>
-</details>
