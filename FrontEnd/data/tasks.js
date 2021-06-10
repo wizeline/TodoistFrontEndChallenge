@@ -11,9 +11,12 @@ export const NUMBEROFTASKTOADD ={
     }
 }
 
-export const FAKEDATA ={
+export const DATA ={
     FAKE:{
-       FAKEWORD: faker.lorem.word()
+       FAKEWORD:faker.lorem.word()
+    },
+    STATICWORD:{
+        WORD: 'test'
     }
 }
 
