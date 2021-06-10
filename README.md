@@ -4,7 +4,7 @@
   <br>
  
   <br>
-  toDoist Challenge - FrontEnd/BackEnd
+  ToDoist Challenge - FrontEnd/BackEnd
   <br>
 </h1>
 
@@ -50,7 +50,7 @@ $ INVALIDUSERNAME=wrongUser@gmail.com
 $ INVALIDPASSWORD=wrongPassword
 ```
 ### Before running 
-It needs to be considered that this project uses `env` files to work properly.
+It needs to be considered that this project uses `.env` files to work properly.
 
 ### Run FrontEnd 
 In order to run FrontEnd, execute the following commands 
