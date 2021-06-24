@@ -73,10 +73,10 @@
       <div class="client-logo" style="padding:15px"></div>
       <div class="bg-primary" style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">
         <h3>Summary</h3><br>
-        <p class="lead">Start Time: Tue Jun 15 2021 18:12:44 GMT-0500 (Central Daylight Time)</p>
+        <p class="lead">Start Time: Tue Jun 15 2021 19:03:51 GMT-0500 (Central Daylight Time)</p>
         <p class="lead">Browsers: Chrome 91.0.4472.106 / macOS 10.15.7</p>
-        <p class="lead">Duration: 46s</p>
-        <p class="lead">Tests Failed: 2 out of 2</p>
+        <p class="lead">Duration: 1m 41s</p>
+        <p class="lead">Tests Failed: 2 out of 9</p>
         <p class="lead">Tests Skipped: 0</p>
       </div><br>
       <table class="table sortable" style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">
@@ -91,21 +91,77 @@
           </tr>
         </thead>
         <tbody>
-           <tr class="danger">
+           <tr class="success">
   <td>1</td>
+  <td>Create Tasks feature</td>
+  <td>Add one task</td>
+  <td>Chrome 91.0.4472.106 / macOS 10.15.7</td>
+  <td>14s</td>
+  <td>passed</td>
+ </tr>
+ <tr class="success">
+  <td>2</td>
+  <td>Create Tasks feature</td>
+  <td>Add 10 tasks</td>
+  <td>Chrome 91.0.4472.106 / macOS 10.15.7</td>
+  <td>16s</td>
+  <td>passed</td>
+ </tr>
+ <tr class="danger">
+  <td>3</td>
   <td>Create Tasks feature</td>
   <td>Add one task with Faker word</td>
   <td>Chrome 91.0.4472.106 / macOS 10.15.7</td>
-  <td>23s</td>
-  <td><a href="#test-1">failed</a></td>
+  <td>22s</td>
+  <td><a href="#test-3">failed</a></td>
  </tr>
  <tr class="danger">
-  <td>2</td>
+  <td>4</td>
   <td>Create Tasks feature</td>
   <td>Add 10 task with Faker word</td>
   <td>Chrome 91.0.4472.106 / macOS 10.15.7</td>
-  <td>23s</td>
-  <td><a href="#test-2">failed</a></td>
+  <td>21s</td>
+  <td><a href="#test-4">failed</a></td>
+ </tr>
+ <tr class="success">
+  <td>5</td>
+  <td>Login feature</td>
+  <td>Valid Credentials</td>
+  <td>Chrome 91.0.4472.106 / macOS 10.15.7</td>
+  <td>10s</td>
+  <td>passed</td>
+ </tr>
+ <tr class="success">
+  <td>6</td>
+  <td>Login feature</td>
+  <td>Wrong Credentials</td>
+  <td>Chrome 91.0.4472.106 / macOS 10.15.7</td>
+  <td>6s</td>
+  <td>passed</td>
+ </tr>
+ <tr class="success">
+  <td>7</td>
+  <td>Login feature</td>
+  <td>Empty Credencials</td>
+  <td>Chrome 91.0.4472.106 / macOS 10.15.7</td>
+  <td>3s</td>
+  <td>passed</td>
+ </tr>
+ <tr class="success">
+  <td>8</td>
+  <td>Login feature</td>
+  <td>Only User</td>
+  <td>Chrome 91.0.4472.106 / macOS 10.15.7</td>
+  <td>4s</td>
+  <td>passed</td>
+ </tr>
+ <tr class="success">
+  <td>9</td>
+  <td>Login feature</td>
+  <td>Only Password</td>
+  <td>Chrome 91.0.4472.106 / macOS 10.15.7</td>
+  <td>5s</td>
+  <td>passed</td>
  </tr>
 
         </tbody>
@@ -122,7 +178,7 @@
       </table>
       <br>
       <h3>Error Details</h3>
-       <h4 id="test-1" style="color: red;">1. Create Tasks feature - Add one task with Faker word</h4>
+       <h4 id="test-3" style="color: red;">3. Create Tasks feature - Add one task with Faker word</h4>
  <pre style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">The specified selector does not match any element in the DOM tree.
 
  &gt; | Selector(&#39;.task_editor__form_actions .ist_button&#39;)
@@ -143,7 +199,7 @@ Browser: Chrome 91.0.4472.106 / macOS 10.15.7
 
    at &lt;anonymous&gt; (/Users/ricardo.rodriguezr/Desktop/toDoist-Challenge/TodoistChallenge/FrontEnd/pages/taskPage.js:28:21)
    at asyncGeneratorStep (/Users/ricardo.rodriguezr/Desktop/toDoist-Challenge/TodoistChallenge/FrontEnd/pages/taskPage.js:1:311)
-   at _next (/Users/ricardo.rodriguezr/Desktop/toDoist-Challenge/TodoistChallenge/FrontEnd/pages/taskPage.js:1:649) </pre><br> <h4 id="test-2" style="color: red;">2. Create Tasks feature - Add 10 task with Faker word</h4>
+   at _next (/Users/ricardo.rodriguezr/Desktop/toDoist-Challenge/TodoistChallenge/FrontEnd/pages/taskPage.js:1:649) </pre><br> <h4 id="test-4" style="color: red;">4. Create Tasks feature - Add 10 task with Faker word</h4>
  <pre style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">The specified selector does not match any element in the DOM tree.
 
  &gt; | Selector(&#39;.task_editor__form_actions .ist_button&#39;)
