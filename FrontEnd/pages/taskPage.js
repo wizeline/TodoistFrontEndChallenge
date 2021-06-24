@@ -1,5 +1,5 @@
 import {Selector,t} from "testcafe"
-import {DATA} from '../data/tasks'
+
 
 class taskPage{
     constructor(){
@@ -24,7 +24,7 @@ class taskPage{
 
           for(let i = 0; i <=numberOfTask; i++){ 
             await t
-                   .typeText(this.taskTextField, taskName + " " + i )
+                   .typeText(this.taskTextField, taskName + "_" + i )
                    .click(this.addTaskBtn)
               j++
               if(j=== numberOfTask){

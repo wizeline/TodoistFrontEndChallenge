@@ -4,21 +4,21 @@
   "description": "toDoist project",
   "main": "index.js",
   "scripts": {
-
     "test:chrome:headless": "testcafe chrome:headless ./FrontEnd/test/ -e --reporter list,html:test-reports/testReportChrome.html",
     "test:chrome": "testcafe chrome ./FrontEnd/test/ -e --reporter list,html:test-reports/testReportChrome.html",
     "test:safari": "testcafe safari ./FrontEnd/test/ -e --reporter list,html:test-reports/testReportChrome.html",
     "test:all": "testcafe all ./FrontEnd/test/ -e --reporter list,html:test-reports/testReportChrome.html"
-
   },
   "author": "Ricardo Rodriguez",
   "license": "ISC",
   "dependencies": {
     "-": "0.0.1",
     "dotenv": "8.2.0",
+    "faker": "^5.5.3",
     "g": "^2.0.1",
+    "global": "^4.4.0",
+    "newman-reporter-htmlextra": "^1.21.0",
     "testcafe": "^1.8.6",
-    "testcafe-reporter-html": "^1.4.6",
-    "faker":"^5.5.3"
+    "testcafe-reporter-html": "^1.4.6"
   }
 }
