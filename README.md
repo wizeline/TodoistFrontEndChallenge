@@ -70,8 +70,7 @@ In order to run FrontEnd, execute the following commands
 
 #### Scripts to run BE
 ```bash
-# On the shared folder
-# test:be
-$ yarn test:be
+# On the dkidsweb folder
+$ yarn 
 ```
 
