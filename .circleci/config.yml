@@ -7,6 +7,8 @@ orbs:
 orbs:
   slack: circleci/slack@4.4.4
 
+  slack: circleci/slack@4.4.4
+
 workflows:
   sample:
     jobs:
