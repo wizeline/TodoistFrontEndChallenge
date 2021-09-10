@@ -4,6 +4,7 @@ import TaskPage from '../pages/taskPage'
 
 import {CREDENTIALS} from '../data/users'
 import {NUMBEROFTASKTOADD, DATA} from '../data/tasks'
+import { random } from 'faker'
 
 
 
@@ -56,4 +57,3 @@ test('Add 10 task with Faker word', async t =>{
     }
     await t.expect(await TaskPage.getTaskName.count).eql(NUMBEROFTASKTOADD.TEN_TASKS.TASKNUMBER)
 })
-
