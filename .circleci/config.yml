@@ -4,6 +4,8 @@
 
 orbs:
   node: circleci/node@4.1
+orbs:
+  slack: circleci/slack@4.4.4
 
 workflows:
   sample:
@@ -28,4 +30,19 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
+
+jobs:
+  example-job:
+    docker:
+      # replace with your preferred image
+      - image: cimg/base:stable
+    steps:
+      - slack/notify:
+          branch_pattern: main 
+          channel: "todoistchallenge" 
+
+workflows:
+  example-workflow:
+    jobs:
+      - example-job
 
