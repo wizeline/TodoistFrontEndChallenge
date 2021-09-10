@@ -4,7 +4,7 @@
 
 orbs:
   node: circleci/node@4.1
-orbs:
+
   slack: circleci/slack@4.4.4
 
 workflows:
