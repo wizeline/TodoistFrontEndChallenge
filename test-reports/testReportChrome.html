@@ -73,11 +73,11 @@
       <div class="client-logo" style="padding:15px"></div>
       <div class="bg-primary" style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">
         <h3>Summary</h3><br>
-        <p class="lead">Start Time: Thu Sep 02 2021 21:00:01 GMT-0500 (Central Daylight Time)</p>
-        <p class="lead">Browsers: Chrome 92.0.4515.159 / macOS 10.15.7</p>
-        <p class="lead">Duration: 1m 57s</p>
-        <p class="lead">Tests Failed: 2 out of 9</p>
-        <p class="lead">Tests Skipped: 0</p>
+        <p class="lead">Start Time: Sun Sep 19 2021 00:40:49 GMT-0500 (Central Daylight Time)</p>
+        <p class="lead">Browsers: Chrome 93.0.4577.82 / macOS 10.15.7</p>
+        <p class="lead">Duration: 25s</p>
+        <p class="lead">Tests Failed: 0 out of 5</p>
+        <p class="lead">Tests Skipped: 4</p>
       </div><br>
       <table class="table sortable" style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">
         <thead>
@@ -91,76 +91,76 @@
           </tr>
         </thead>
         <tbody>
-           <tr class="success">
+           <tr class="warning">
   <td>1</td>
   <td>Create Tasks feature</td>
   <td>Add one task</td>
-  <td>Chrome 92.0.4515.159 / macOS 10.15.7</td>
-  <td>14s</td>
-  <td>passed</td>
+  <td>Chrome 93.0.4577.82 / macOS 10.15.7</td>
+  <td>0s</td>
+  <td>skipped</td>
  </tr>
- <tr class="success">
+ <tr class="warning">
   <td>2</td>
   <td>Create Tasks feature</td>
   <td>Add 10 tasks</td>
-  <td>Chrome 92.0.4515.159 / macOS 10.15.7</td>
-  <td>19s</td>
-  <td>passed</td>
+  <td>Chrome 93.0.4577.82 / macOS 10.15.7</td>
+  <td>0s</td>
+  <td>skipped</td>
  </tr>
- <tr class="danger">
+ <tr class="warning">
   <td>3</td>
   <td>Create Tasks feature</td>
   <td>Add one task with Faker word</td>
-  <td>Chrome 92.0.4515.159 / macOS 10.15.7</td>
-  <td>23s</td>
-  <td><a href="#test-3">failed</a></td>
+  <td>Chrome 93.0.4577.82 / macOS 10.15.7</td>
+  <td>0s</td>
+  <td>skipped</td>
  </tr>
- <tr class="danger">
+ <tr class="warning">
   <td>4</td>
   <td>Create Tasks feature</td>
   <td>Add 10 task with Faker word</td>
-  <td>Chrome 92.0.4515.159 / macOS 10.15.7</td>
-  <td>23s</td>
-  <td><a href="#test-4">failed</a></td>
+  <td>Chrome 93.0.4577.82 / macOS 10.15.7</td>
+  <td>0s</td>
+  <td>skipped</td>
  </tr>
  <tr class="success">
   <td>5</td>
   <td>Login feature</td>
   <td>Valid Credentials</td>
-  <td>Chrome 92.0.4515.159 / macOS 10.15.7</td>
-  <td>12s</td>
+  <td>Chrome 93.0.4577.82 / macOS 10.15.7</td>
+  <td>11s</td>
   <td>passed</td>
  </tr>
  <tr class="success">
   <td>6</td>
   <td>Login feature</td>
   <td>Wrong Credentials</td>
-  <td>Chrome 92.0.4515.159 / macOS 10.15.7</td>
-  <td>7s</td>
+  <td>Chrome 93.0.4577.82 / macOS 10.15.7</td>
+  <td>5s</td>
   <td>passed</td>
  </tr>
  <tr class="success">
   <td>7</td>
   <td>Login feature</td>
   <td>Empty Credencials</td>
-  <td>Chrome 92.0.4515.159 / macOS 10.15.7</td>
-  <td>6s</td>
+  <td>Chrome 93.0.4577.82 / macOS 10.15.7</td>
+  <td>2s</td>
   <td>passed</td>
  </tr>
  <tr class="success">
   <td>8</td>
   <td>Login feature</td>
   <td>Only User</td>
-  <td>Chrome 92.0.4515.159 / macOS 10.15.7</td>
-  <td>7s</td>
+  <td>Chrome 93.0.4577.82 / macOS 10.15.7</td>
+  <td>3s</td>
   <td>passed</td>
  </tr>
  <tr class="success">
   <td>9</td>
   <td>Login feature</td>
   <td>Only Password</td>
-  <td>Chrome 92.0.4515.159 / macOS 10.15.7</td>
-  <td>6s</td>
+  <td>Chrome 93.0.4577.82 / macOS 10.15.7</td>
+  <td>3s</td>
   <td>passed</td>
  </tr>
 
@@ -178,49 +178,7 @@
       </table>
       <br>
       <h3>Error Details</h3>
-       <h4 id="test-3" style="color: red;">3. Create Tasks feature - Add one task with Faker word</h4>
- <pre style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">The specified selector does not match any element in the DOM tree.
-
- &gt; | Selector(&#39;button.reactist_button.reactist_button--primary&#39;)
-
-Browser: Chrome 92.0.4515.159 / macOS 10.15.7
-
-   23 |          let j = 0
-   24 |          
-   25 |          for(let i = 0; i &lt;=numberOfTask; i++)&#123 
-   26 |            await t
-   27 |                   .typeText(this.taskTextField, taskName + &quot;_&quot; + i )
- &gt; 28 |                   .click(this.addTaskBtn)
-   29 |              j++
-   30 |              if(j=== numberOfTask){
-   31 |                await t.click(this.cancelBtn)
-   32 |                break
-   33 |              &#125
-
-   at &lt;anonymous&gt; (/Users/ricardo.rodriguezr/Desktop/toDoist-Challenge/TodoistChallenge/FrontEnd/pages/taskPage.js:28:21)
-   at asyncGeneratorStep (/Users/ricardo.rodriguezr/Desktop/toDoist-Challenge/TodoistChallenge/FrontEnd/pages/taskPage.js:1:311)
-   at _next (/Users/ricardo.rodriguezr/Desktop/toDoist-Challenge/TodoistChallenge/FrontEnd/pages/taskPage.js:1:649) </pre><br> <h4 id="test-4" style="color: red;">4. Create Tasks feature - Add 10 task with Faker word</h4>
- <pre style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">The specified selector does not match any element in the DOM tree.
-
- &gt; | Selector(&#39;button.reactist_button.reactist_button--primary&#39;)
-
-Browser: Chrome 92.0.4515.159 / macOS 10.15.7
-
-   23 |          let j = 0
-   24 |          
-   25 |          for(let i = 0; i &lt;=numberOfTask; i++)&#123 
-   26 |            await t
-   27 |                   .typeText(this.taskTextField, taskName + &quot;_&quot; + i )
- &gt; 28 |                   .click(this.addTaskBtn)
-   29 |              j++
-   30 |              if(j=== numberOfTask){
-   31 |                await t.click(this.cancelBtn)
-   32 |                break
-   33 |              &#125
-
-   at &lt;anonymous&gt; (/Users/ricardo.rodriguezr/Desktop/toDoist-Challenge/TodoistChallenge/FrontEnd/pages/taskPage.js:28:21)
-   at asyncGeneratorStep (/Users/ricardo.rodriguezr/Desktop/toDoist-Challenge/TodoistChallenge/FrontEnd/pages/taskPage.js:1:311)
-   at _next (/Users/ricardo.rodriguezr/Desktop/toDoist-Challenge/TodoistChallenge/FrontEnd/pages/taskPage.js:1:649) </pre><br>
+      
     </div>
     <script>
       const modal = document.getElementById('myModal');

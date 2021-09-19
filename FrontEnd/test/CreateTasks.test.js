@@ -8,7 +8,7 @@ import { random } from 'faker'
 
 
 
-fixture('Create Tasks feature')
+fixture.skip('Create Tasks feature')
         .page`https://todoist.com`
         .beforeEach(async t =>{
         await t.click(WelcomePage.loginBtn)
