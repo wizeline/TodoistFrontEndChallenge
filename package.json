@@ -19,7 +19,7 @@
     "g": "^2.0.1",
     "global": "^4.4.0",
     "newman": "^5.2.4",
-    "newman-reporter-htmlextra": "^1.22.10",
+    "newman-reporter-htmlextra": "^1.22.1",
     "reporter": "^0.1.0",
     "testcafe": "^1.14.2",
     "testcafe-reporter-html": "^1.4.6"
