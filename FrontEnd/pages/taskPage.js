@@ -5,9 +5,9 @@ class taskPage{
     constructor(){
         this.pageTitle = Selector('h1 span')
         this.addTaskPlusBtn = Selector('.plus_add_button')
-        this.taskTextField = Selector('.public-DraftStyleDefault-ltr')
-        this.addTaskBtn = Selector('.task_editor__form_actions .ist_button')
-        this.cancelBtn  = Selector('.cancel')
+        this.taskTextField = Selector('div.public-DraftStyleDefault-block')
+        this.addTaskBtn = Selector('button.reactist_button.reactist_button--primary')
+        this.cancelBtn  = Selector('button.reactist_button.reactist_button--secondary')
         this.getAllTask = Selector('.task_list_item__content')
         this.getTask = Selector('.task_list_item__info_tags')
         this.getTaskName = Selector('.markdown_content')
@@ -21,7 +21,7 @@ class taskPage{
           .click(this.addTaskPlusBtn)
           // "j" variable used to count number of task added
           let j = 0
-
+          
           for(let i = 0; i <=numberOfTask; i++){ 
             await t
                    .typeText(this.taskTextField, taskName + "_" + i )
