@@ -7,7 +7,7 @@ orbs:
   # Orbs reduce the amount of configuration required for common tasks. 
   # See the orb documentation here: https://circleci.com/developer/orbs/orb/circleci/node
   node: circleci/node@4.1
-
+  browser-tools: circleci/browser-tools@1.1.3
   slack: circleci/slack@4.4.4
 
 
@@ -26,14 +26,14 @@ jobs:
       - checkout
       # Next, the node orb's install-packages step will install the dependencies from a package.json.
       # The orb install-packages step will also automatically cache them for faster future runs.
-
+      - browser-tools/install-chrome
       #- node/install-packages
       # If you are using yarn instead npm, remove the line above and uncomment the two lines below.
       - node/install-packages:
           pkg-manager: yarn 
       - run:
           name: Run tests
-          command: yarn run testcafe chrome ./FrontEnd/test/
+          command: yarn run test:chrome:headless
 
 workflows:
   # Below is the definition of your workflow.
