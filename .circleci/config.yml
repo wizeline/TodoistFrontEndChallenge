@@ -33,7 +33,7 @@ jobs:
           pkg-manager: yarn 
       - run:
           name: Run tests
-          command: yarn test:chrome:headless
+          command: yarn testcafe chrome:headless ./FrontEnd/test/ -e --reporter list,html:test-reports/testReportChrome.html
 
 workflows:
   # Below is the definition of your workflow.

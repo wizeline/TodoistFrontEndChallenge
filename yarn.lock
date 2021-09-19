@@ -3636,10 +3636,10 @@ neo-async@^2.6.0:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-newman-reporter-htmlextra@^1.22.10:
-  version "1.22.0"
-  resolved "https://registry.yarnpkg.com/newman-reporter-htmlextra/-/newman-reporter-htmlextra-1.22.0.tgz#b906187c29f30d573f41fcb4e874dadca7548548"
-  integrity sha512-Nnot/yp/SSpE8pgiBDbLbyDa+1N4ZQoMhO6gtKptEnvSuDMsSANKAuGtEMxqr0Gb+VxMCgR4w6MIqTh0ElNmvw==
+newman-reporter-htmlextra@^1.22.1:
+  version "1.22.1"
+  resolved "https://registry.yarnpkg.com/newman-reporter-htmlextra/-/newman-reporter-htmlextra-1.22.1.tgz#a108481b8a042c3fbb05376d791ced9efbb9c82f"
+  integrity sha512-mmfN7NdCDMUTBMCT7KJABRAvbFMwSNh2b6TWEe5zI67ucFTDqp9tF0y6Tj9DzPe6fvRd7zI89H/SDPe4nNliOw==
   dependencies:
     chalk "^4.1.2"
     cli-progress "^3.8.2"
