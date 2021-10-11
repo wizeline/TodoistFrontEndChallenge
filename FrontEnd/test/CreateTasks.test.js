@@ -11,6 +11,7 @@ import { random } from 'faker'
 fixture.skip('Create Tasks feature')
         .page`https://todoist.com`
         .beforeEach(async t =>{
+        await t.maximizeWindow()
         await t.click(WelcomePage.loginBtn)
         await LoginPage.submitLogin(CREDENTIALS.VALID_USER.USERNAME,CREDENTIALS.VALID_USER.PASSWORD)
         await t.wait(5000)

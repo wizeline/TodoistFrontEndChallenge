@@ -7,6 +7,7 @@ import {CREDENTIALS} from '../data/users'
 fixture('Login feature')
             .page`https://todoist.com`
             .beforeEach(async t =>{
+              await t.maximizeWindow()
               await t.click(WelcomePage.loginBtn)
             })
 
