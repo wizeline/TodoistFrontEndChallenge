@@ -40,7 +40,7 @@ test('Add 10 tasks', async t =>{
     await t.expect(await TaskPage.getTaskName.count).eql(NUMBEROFTASKTOADD.TEN_TASKS.TASKNUMBER)
 })
     //test to add one task with a dinamic word (using faker)
-test('Add one task with Faker word', async t =>{
+test.skip('Add one task with Faker word', async t =>{
     await TaskPage.addTasks(NUMBEROFTASKTOADD.ONE_TASK.TASKNUMBER, DATA.FAKE.FAKEWORD)
     let numberOfTasks = await TaskPage.getTaskName.count
     console.log("number of tasks added "+ numberOfTasks)
@@ -49,7 +49,7 @@ test('Add one task with Faker word', async t =>{
 
 })
     // test to add 10 tasks with a dinamic word (using faker)
-test('Add 10 task with Faker word', async t =>{
+test.skip('Add 10 task with Faker word', async t =>{
     await TaskPage.addTasks(NUMBEROFTASKTOADD.TEN_TASKS.TASKNUMBER, DATA.FAKE.FAKEWORD)
     let numberOfTasks = await TaskPage.getTaskName.count
     console.log("number of tasks added "+numberOfTasks)
