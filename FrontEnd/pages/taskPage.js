@@ -4,13 +4,14 @@ import {Selector,t} from "testcafe"
 class taskPage{
     constructor(){
         this.pageTitle = Selector('h1 span')
-        this.addTaskPlusBtn = Selector('.plus_add_button')
-        this.taskTextField = Selector('div.public-DraftStyleDefault-block')
+        this.addTaskPlusBtn = Selector('button.plus_add_button')
+        this.taskTextField = Selector('div.public-DraftStyleDefault-block.public-DraftStyleDefault-ltr')
+        this.taskDescription = Selector('textarea.task_editor__description_field')
         this.addTaskBtn = Selector('button.reactist_button.reactist_button--primary')
         this.cancelBtn  = Selector('button.reactist_button.reactist_button--secondary')
         this.getAllTask = Selector('.task_list_item__content')
         this.getTask = Selector('.task_list_item__info_tags')
-        this.getTaskName = Selector('.markdown_content')
+        this.getTaskName = Selector('.markdown_content.task_content')
         this.deleteTaskBtn = Selector('.menu_item.icon_menu_item.danger_menu')
         this.deleteConfirmationBtn = Selector('.reactist_modal_box__actions .ist_button.ist_button_red')
     }
@@ -25,6 +26,7 @@ class taskPage{
           for(let i = 0; i <=numberOfTask; i++){ 
             await t
                    .typeText(this.taskTextField, taskName + "_" + i )
+                   .typeText(this.taskDescription, taskName + "_" + i)
                    .click(this.addTaskBtn)
               j++
               if(j=== numberOfTask){
