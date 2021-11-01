@@ -8,7 +8,7 @@
     "test:chrome": "testcafe chrome ./FrontEnd/test/ -e --reporter list,html:test-reports/testReportChrome.html",
     "test:safari": "testcafe safari ./FrontEnd/test/ -e --reporter list,html:test-reports/testReportChrome.html",
     "test:all": "testcafe all ./FrontEnd/test/ -e --reporter list,html:test-reports/testReportChrome.html",
-    "test:be": "newman run ./BackEnd/collection/Todoist.postman_collection.json -e ./BackEnd/envVariables/QA_Environment.postman_environment.json -d ./BackEnd/data/TDD.txt"
+    "test:be": "newman run ./BackEnd/collection/Todoist.postman_collection.json -e ./BackEnd/envVariables/QA_Environment.postman_environment.json -d ./BackEnd/data/TDD.txt -r htmlextra --reporter-htmlextra-export './test-reports/reportBE.html'"
   },
   "author": "Ricardo Rodriguez",
   "license": "ISC",
