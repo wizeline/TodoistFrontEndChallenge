@@ -306,7 +306,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"content\": \"TestUpdated\"\r\n}"
+									"raw": ""
 								},
 								"url": {
 									"raw": "{{TodoistURL}}/{{taskId}}/close",
@@ -356,7 +356,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"content\": \"TestUpdated\"\r\n}"
+									"raw": ""
 								},
 								"url": {
 									"raw": "{{TodoistURL}}/{{taskId}}/reopen",
@@ -497,7 +497,7 @@
 					"    pm.response.to.be.success;",
 					"});",
 					"pm.test(\"Response time is less than 500ms\", function () {",
-					"    pm.expect(pm.response.responseTime).to.be.below(500);",
+					"    pm.expect(pm.response.responseTime).to.be.below(1000);",
 					"});",
 					""
 				]
@@ -507,11 +507,13 @@
 	"variable": [
 		{
 			"key": "taskIdTDD",
-			"value": ""
+			"value": "",
+			"disabled": true
 		},
 		{
 			"key": "taskIdTDD",
-			"value": ""
+			"value": "",
+			"disabled": true
 		}
 	]
 }
