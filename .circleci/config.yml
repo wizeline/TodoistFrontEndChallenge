@@ -34,6 +34,7 @@ jobs:
       - run:
           name: Run tests
           command: yarn run test:chrome:headless
+          command: yarn run test:be
 
 workflows:
   # Below is the definition of your workflow.
