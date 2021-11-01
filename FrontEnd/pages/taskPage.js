@@ -12,7 +12,7 @@ class taskPage{
         this.getAllTask = Selector('.task_list_item__content')
         this.getTask = Selector('span.task_list_item__project')
         this.getTaskName = Selector('.markdown_content.task_content')
-        this.deleteTaskBtn = Selector('.menu_item.icon_menu_item.danger_menu')
+        this.deleteTaskBtn = Selector('li.menu_item.icon_menu_item.danger_menu')
         this.deleteConfirmationBtn = Selector('.reactist_modal_box__actions .ist_button.ist_button_red')
     }
     
