@@ -497,7 +497,7 @@
 					"    pm.response.to.be.success;",
 					"});",
 					"pm.test(\"Response time is less than 500ms\", function () {",
-					"    pm.expect(pm.response.responseTime).to.be.below(500);",
+					"    pm.expect(pm.response.responseTime).to.be.below(1000);",
 					"});",
 					""
 				]
