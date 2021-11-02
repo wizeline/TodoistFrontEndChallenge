@@ -29,6 +29,12 @@ jobs:
       - browser-tools/install-chrome
       #- node/install-packages
       # If you are using yarn instead npm, remove the line above and uncomment the two lines below.
+      - slack/notify:
+          channel: todoistchallenge 
+          custom: test 
+          branch_pattern: .+ 
+          mentions: <@Ricardo Rodriguez> 
+          tag_pattern: .+
       - node/install-packages:
           pkg-manager: yarn 
       - run:
@@ -37,12 +43,7 @@ jobs:
       - run:
           name: Run BE test
           command: yarn run test:be    
-      - slack/notify:
-          event: always 
-          channel: todoistchallenge 
-          branch_pattern: .+ 
-          mentions: <@Ricardo Rodriguez> 
-          tag_pattern: .+     
+           
 
 
 workflows:
