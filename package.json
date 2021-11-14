@@ -4,21 +4,24 @@
   "description": "toDoist project",
   "main": "index.js",
   "scripts": {
-
     "test:chrome:headless": "testcafe chrome:headless ./FrontEnd/test/ -e --reporter list,html:test-reports/testReportChrome.html",
     "test:chrome": "testcafe chrome ./FrontEnd/test/ -e --reporter list,html:test-reports/testReportChrome.html",
     "test:safari": "testcafe safari ./FrontEnd/test/ -e --reporter list,html:test-reports/testReportChrome.html",
-    "test:all": "testcafe all ./FrontEnd/test/ -e --reporter list,html:test-reports/testReportChrome.html"
-
+    "test:all": "testcafe all ./FrontEnd/test/ -e --reporter list,html:test-reports/testReportChrome.html",
+    "test:be": "newman run ./BackEnd/collection/Todoist.postman_collection.json -e ./BackEnd/envVariables/QA_Environment.postman_environment.json -d ./BackEnd/data/TDD.txt -r htmlextra --reporter-htmlextra-export './test-reports/reportBE.html'"
   },
   "author": "Ricardo Rodriguez",
   "license": "ISC",
   "dependencies": {
     "-": "0.0.1",
     "dotenv": "8.2.0",
+    "faker": "^5.5.3",
     "g": "^2.0.1",
-    "testcafe": "^1.8.6",
-    "testcafe-reporter-html": "^1.4.6",
-    "faker":"^5.5.3"
+    "global": "^4.4.0",
+    "newman": "^5.2.4",
+    "newman-reporter-htmlextra": "^1.22.1",
+    "reporter": "^0.1.0",
+    "testcafe": "^1.14.2",
+    "testcafe-reporter-html": "^1.4.6"
   }
 }

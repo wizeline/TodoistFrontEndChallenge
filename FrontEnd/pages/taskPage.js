@@ -1,17 +1,17 @@
 import {Selector,t} from "testcafe"
-import {DATA} from '../data/tasks'
+
 
 class taskPage{
     constructor(){
         this.pageTitle = Selector('h1 span')
         this.addTaskPlusBtn = Selector('.plus_add_button')
-        this.taskTextField = Selector('.public-DraftStyleDefault-ltr')
-        this.addTaskBtn = Selector('.task_editor__form_actions .ist_button')
-        this.cancelBtn  = Selector('.cancel')
+        this.taskTextField = Selector('div.public-DraftStyleDefault-block')
+        this.addTaskBtn = Selector('button.reactist_button.reactist_button--primary')
+        this.cancelBtn  = Selector('button.reactist_button.reactist_button--secondary')
         this.getAllTask = Selector('.task_list_item__content')
         this.getTask = Selector('.task_list_item__info_tags')
         this.getTaskName = Selector('.markdown_content')
-        this.deleteTaskBtn = Selector('.danger_menu .icon_menu_item__content')
+        this.deleteTaskBtn = Selector('.menu_item.icon_menu_item.danger_menu')
         this.deleteConfirmationBtn = Selector('.reactist_modal_box__actions .ist_button.ist_button_red')
     }
     
@@ -21,10 +21,10 @@ class taskPage{
           .click(this.addTaskPlusBtn)
           // "j" variable used to count number of task added
           let j = 0
-
+          
           for(let i = 0; i <=numberOfTask; i++){ 
             await t
-                   .typeText(this.taskTextField, taskName + " " + i )
+                   .typeText(this.taskTextField, taskName + "_" + i )
                    .click(this.addTaskBtn)
               j++
               if(j=== numberOfTask){
