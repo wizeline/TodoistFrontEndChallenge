@@ -39,16 +39,7 @@ jobs:
       - run:
           name: Run BE test
           command: yarn run test:be   
-      - name: Notify Slack Action
-         uses: ravsamhq/notify-slack-action@v1
-
-         steps:
-  - uses: ravsamhq/notify-slack-action@v1
-    if: always()
-    with:
-      status: ${{ job.status }} # required
-    env:
-      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # required
+      
  
            
 
@@ -63,3 +54,14 @@ workflows:
       - build-and-test
       # For running simple node tests, you could optionally use the node/test job from the orb to replicate and replace the job above in fewer lines.
       # - node/test
+
+- name: Notify Slack Action
+         uses: ravsamhq/notify-slack-action@v1
+
+         steps:
+  - uses: ravsamhq/notify-slack-action@v1
+    if: always()
+    with:
+      status: ${{ job.status }} # required
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # required
