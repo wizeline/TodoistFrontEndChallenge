@@ -1,19 +1,3 @@
-- name: Notify Slack Action
-  uses: ravsamhq/notify-slack-action@v1
-
-steps:
-  - uses: ravsamhq/notify-slack-action@v1
-    if: always()
-    with:
-      status: ${{ job.status }}
-      token: ${{ secrets.GITHUB_TOKEN }}
-      notification_title: '{workflow} has {status_message}'
-      message_format: '{emoji} *{workflow}* {status_message} in <{repo_url}|{repo}>'
-      footer: 'Linked Repo <{repo_url}|{repo}> | <{workflow_url}|View Workflow>'
-      notify_when: 'failure'
-    env:
-      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-      
 # Use the latest 2.1 version of CircleCI pipeline process engine. 
 # See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
@@ -70,3 +54,4 @@ workflows:
       - build-and-test
       # For running simple node tests, you could optionally use the node/test job from the orb to replicate and replace the job above in fewer lines.
       # - node/test
+      
