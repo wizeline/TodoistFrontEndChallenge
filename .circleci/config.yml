@@ -38,7 +38,18 @@ jobs:
           command: yarn run test:chrome:headless
       - run:
           name: Run BE test
-          command: yarn run test:be    
+          command: yarn run test:be   
+      - name: Notify Slack Action
+         uses: ravsamhq/notify-slack-action@v1
+
+         steps:
+  - uses: ravsamhq/notify-slack-action@v1
+    if: always()
+    with:
+      status: ${{ job.status }} # required
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # required
+ 
            
 
 

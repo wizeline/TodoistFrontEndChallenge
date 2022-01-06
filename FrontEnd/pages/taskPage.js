@@ -14,8 +14,12 @@ class taskPage{
         this.getTaskName = Selector('.markdown_content.task_content')
         this.deleteTaskBtn = Selector('li.menu_item.icon_menu_item.danger_menu')
         this.deleteConfirmationBtn = Selector('.reactist_modal_box__actions .ist_button.ist_button_red')
+        this.gotItBtn = Selector('.reactist_button.reactist_button--primary')
     }
     
+
+
+
     //method to add tasks 
     async addTasks(numberOfTask, taskName){
       await t

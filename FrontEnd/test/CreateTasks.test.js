@@ -5,10 +5,11 @@ import TaskPage from '../pages/taskPage'
 import {CREDENTIALS} from '../data/users'
 import {NUMBEROFTASKTOADD, DATA} from '../data/tasks'
 import { random } from 'faker'
+import taskPage from '../pages/taskPage'
 
 
 
-fixture.skip('Create Tasks feature')
+fixture('Create Tasks feature')
         .page`https://todoist.com`
         .beforeEach(async t =>{
         await t.maximizeWindow()
@@ -18,6 +19,7 @@ fixture.skip('Create Tasks feature')
         let numberOfTasks = await TaskPage.getTaskName.count
         console.log('number of tasks added to delete '+numberOfTasks)
         await TaskPage.deleteTasks( numberOfTasks)
+        
     })
 
     //test to add one task with an static word
